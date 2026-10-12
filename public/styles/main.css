@@ -1,0 +1,117 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-color: #807DB4;
+  color: #5E5D6F;
+  justify-items: center;
+  align-content: center;
+}
+
+button {
+  margin-top: 2px;
+}
+
+header {
+  height: 25%;
+  align-content: center;
+}
+
+footer {
+  height: 25%;
+}
+
+h1 {
+  color: #FAFAFA;
+  text-shadow: -2px 0 #5E5D6F;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 3em;
+  margin: 0;
+}
+
+h2 {
+  margin-top: 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#main-try-again {
+  margin-top: 22px;
+  margin-bottom: 20px;
+}
+
+#mood-container {
+  width: 45%;
+  text-align: center;
+}
+
+#mood {
+  width: 75%;
+}
+
+.container {
+  background-color: #ECFCFF;
+  justify-items: center;
+  align-content: center;
+  height: 50%;
+  width: 100%;
+}
+
+.begin-container {
+  text-align: center;
+}
+
+.response-container {
+  min-width: 45%;
+}
+
+.response {
+  color: black;
+  font-style: italic;
+  font-size: larger;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.response-header {
+  color: cadetblue;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.try-again-container {
+  min-width: 45%;
+  max-width: 50%;
+}
+
+.try-again {
+  margin-top: 0;
+  margin-bottom: 1px;
+}
+
+@media (max-width: 430px) {
+  header {
+    align-content: end;
+    text-align: center;
+  }
+
+  #mood {
+    margin-bottom: 5px;
+  }
+
+  .begin-container {
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+
+  .response-container {
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: fit-content;
+  }
+
+  .try-again-container {
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: fit-content;
+  }
+}

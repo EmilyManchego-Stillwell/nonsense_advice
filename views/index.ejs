@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/main.css">
+  <title>SenseorNoSense</title>
+</head>
+<body>
+  <header>
+    <h1>The Sense or No Sense Advice!</h1>
+  </header>
+  <div class="container">
+    <% if (locals.content) { %>
+      <div class="response-container">
+        <h2 class="response-header">Your Mood</h2>
+        <p class="response"> <%= content.mood %> </p>
+        <h2 class="response-header">Our Advice</h2>
+        <p class="response"> <%= content.ourAdvice %> </p>
+      </div>
+      <div class="try-again-container">
+        <p id="main-try-again" class="try-again">Did that make sense or no sense?!</p>
+        <p class="try-again">
+          For different advice, with your current mood, use the refresh button. 
+          To try again with a different mood, press the button below!
+        </p>
+        <form method="GET">
+          <button type="submit">Try again</button>
+        </form>
+      </div>
+    <% } else { %>
+      <div class="begin-container">
+        <h2>Tell us how you are feeling</h2>
+        <h2>and we will give you some free advice!</h2>
+      </div>
+      <form id="mood-container" action="/advice" method="POST">
+        <input id="mood" type="text" name="userMood" placeholder="How are you today?">
+        <input type="submit" value="Advice">
+      </form>
+    <% } %>
+  </div>
+  <footer></footer>
+</body>
+</html>
